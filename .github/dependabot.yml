@@ -1,0 +1,9 @@
+# Keeps GitHub Actions references current (#270 §3.3 — Dependency-Update-Tool).
+# Only the github-actions ecosystem applies: this repo ships docs and assets,
+# with no package manifest for a language-level updater to lock.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
